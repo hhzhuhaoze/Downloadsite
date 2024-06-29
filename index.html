@@ -43,6 +43,33 @@
             width: 100%;
             animation: fadeIn 1s ease-out;
         }
+	    .menu {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .menu ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+    .menu ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+    }
+    .menu ul li a:hover {
+        color: #666;
+    }
 
         /* 入场动画 */
         @keyframes fadeIn {
@@ -69,6 +96,15 @@
     </style>
 </head>
 <body>
+	
+<div class="menu">
+    <ul>
+        <li><a href="https://www.hhzpage.isthebe.st">主页</a></li>
+        <li><a href="https://download.hhzpage.isthebe.st">下载站</a></li>
+        <li><a href="https://chat.hhzpage.isthebe.st">ChatGPT(未上线)</a></li>
+    </ul>
+</div>
+
     <header>
         <h1>资源下载站</h1>
     </header>
